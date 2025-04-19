@@ -53,3 +53,10 @@
 **Team BloomBuddy**  
 **Client:** Hannah Xiao, hx2313@uw.edu <br>
 **Developer:** Laura Tan, xtan0611@uw.edu
+
+
+## Progress
+- Landing page with intro page with bouquet background and site title
+- Scroll down for actual core functions
+- Set up text entry bar, size and position needed to be adjusted
+- Working on wireframes for functions and interactions
