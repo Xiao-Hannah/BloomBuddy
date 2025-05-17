@@ -16,13 +16,13 @@
 
 ### Core Features
 - Text-first input: describe the recipient, mood, or occasion to generate suggestions.
-- Optional image upload: support for visual inspiration (e.g., outfit, moodboard).
 - Generate 1–3 bouquet options per input, each with a visual and rationale.
-- Lightweight NLP engine to extract tone, keywords, and aesthetic cues from text.
 - Color palette-based generation as a foundation for bouquet design.
-- Mock dataset simulating bouquet options and rules.
 
 ### Nice to Have
+- Mock dataset simulating bouquet options and rules.
+- Image upload: support for visual inspiration (e.g., outfit, moodboard).
+- Lightweight NLP engine to extract tone, keywords, and aesthetic cues from text.
 - Map-based integration to show local florist availability.
 - Future support for push notifications or pickup alerts.
 
