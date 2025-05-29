@@ -16,13 +16,13 @@
 
 ### Core Features
 - Text-first input: describe the recipient, mood, or occasion to generate suggestions.
+- Optional image upload: support for visual inspiration (e.g., outfit, moodboard).
 - Generate 1–3 bouquet options per input, each with a visual and rationale.
+- Lightweight NLP engine to extract tone, keywords, and aesthetic cues from text.
 - Color palette-based generation as a foundation for bouquet design.
+- Mock dataset simulating bouquet options and rules.
 
 ### Nice to Have
-- Mock dataset simulating bouquet options and rules.
-- Image upload: support for visual inspiration (e.g., outfit, moodboard).
-- Lightweight NLP engine to extract tone, keywords, and aesthetic cues from text.
 - Map-based integration to show local florist availability.
 - Future support for push notifications or pickup alerts.
 
@@ -58,5 +58,25 @@
 ## Progress
 - Landing page with intro page with bouquet background and site title
 - Scroll down for actual core functions
-- Set up text entry bar, size and position needed to be adjusted
-- Working on wireframes for functions and interactions
+- Set up preferences selection page 
+  - options layout
+  - highlighted option
+  - text entry
+  - navigation for results page
+- Results page (placeholder without connection to backend)
+
+## To view the results
+**1. Clone/Pull from the github**
+- git clone https://github.com/url <br>
+- cd your-repo-name
+
+**2. Install Dependencies** <br>
+Make sure you have Node.js installed (preferably version 16 or higher).
+- npm install
+
+**3. Run the Development Server** <br>
+Start the local development server:
+- npm run dev
+
+**4. Open the Website** <br>
+Once the server is running, open your browser and go to the url link: http://localhost:3000 (It may be different depending on local ports.)

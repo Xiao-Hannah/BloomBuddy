@@ -1,0 +1,159 @@
+.prefSection {
+  background: #f9f4ee;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.prefContainer {
+  background: transparent;
+  padding: 32px 48px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.prefTitle {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #2d2a22;
+}
+
+.group {
+  margin-bottom: 2.2rem;
+}
+
+.groupLabel {
+  font-family: 'Georgia', serif;
+  font-size: 1.25rem;
+  color: #2d2a22;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.occasionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.occasionBtn {
+  background: none;
+  border: 2px solid #bdb7a7;
+  border-radius: 24px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: #2d2a22;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.occasionBtn:hover, .vibeBtn:hover {
+  background: #e9e2d0;
+}
+
+.otherInputWrap {
+  display: flex;
+  align-items: center;
+  border: 2px solid #bdb7a7;
+  border-radius: 24px;
+  padding: 0.5rem 1rem;
+  min-width: 200px;
+  background: #fff;
+}
+
+.otherInputWrap span {
+  margin-right: 0.5rem;
+  color: #2d2a22;
+  font-family: 'Georgia', serif;
+}
+
+.otherInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #2d2a22;
+  width: 100px;
+}
+
+.vibeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.vibeRow {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.vibeBtn {
+  background: none;
+  border: 2px solid #bdb7a7;
+  border-radius: 24px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: #2d2a22;
+  cursor: pointer;
+  min-width: 100px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.vibeDesc {
+  color: #2d2a22;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.detailsInput {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #bdb7a7;
+  background: transparent;
+  font-size: 1rem;
+  color: #2d2a22;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.optional {
+  font-size: 1rem;
+  color: #bdb7a7;
+  font-style: italic;
+  margin-left: 0.3rem;
+}
+
+.selectedOption {
+  background: #b35d6a; /* Muted dark pink */
+  color: #fff;
+  border-color: #b35d6a;
+}
+
+.findBouquetBtn {
+  display: block;
+  margin: 2.5rem auto 0 auto;
+  background: #b35d6a;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 28px;
+  padding: 0.9rem 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(179, 93, 106, 0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.findBouquetBtn:hover {
+  background: #94475a;
+} 
