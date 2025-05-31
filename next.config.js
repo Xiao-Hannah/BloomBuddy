@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
-
-const repoName = 'BloomBuddy'; // replace with your GitHub repo name
+const repoName = "BloomBuddy";
 
 module.exports = {
   output: "export",
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  basePath: isProd ? `/${repoName}` : "",
+  assetPrefix: isProd ? `/${repoName}/` : "",
   images: {
     unoptimized: true,
   },
