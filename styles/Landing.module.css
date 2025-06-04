@@ -39,3 +39,23 @@
   font-size: 1.1rem;
   margin-top: 2.5rem;
 }
+
+.landingBtn {
+  background: #dbe7b0; /* Muted yellow-green */
+  color: #2d4739;
+  border: none;
+  border-radius: 7px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.98rem;
+  font-family: 'Georgia', serif;
+  font-weight: 500;
+  margin: 0.35rem 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgba(44, 80, 67, 0.07);
+  transition: background 0.16s, transform 0.11s;
+}
+.landingBtn:hover, .landingBtn:focus {
+  background: #c8d89a;
+  transform: translateY(-1.5px) scale(1.025);
+  outline: none;
+} 

@@ -4,12 +4,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 48px 0;
+  padding: 0;
 }
 
 .prefContainer {
   background: transparent;
-  padding: 32px 48px;
+  padding: 0 48px 32px 48px;
   border-radius: 12px;
   max-width: 700px;
   width: 100%;
@@ -19,12 +19,13 @@
   font-family: 'Georgia', serif;
   font-size: 2rem;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 2.5rem;
   color: #2d2a22;
 }
 
 .group {
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.5rem;
 }
 
 .groupLabel {
@@ -156,4 +157,129 @@
 
 .findBouquetBtn:hover {
   background: #94475a;
+}
+
+.homeBtn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: #fff;
+  color: #b35d6a;
+  border: 2px solid #bdb7a7;
+  border-radius: 24px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(179, 93, 106, 0.08);
+  transition: background 0.2s, color 0.2s;
+  z-index: 10;
+}
+
+.homeBtn:hover {
+  background: #f9f4ee;
+  color: #94475a;
+}
+
+.prefFlexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.prefOptionsRow {
+  margin-bottom: 2.5rem;
+}
+
+.prefOptionsRow > .group:nth-child(2) {
+  margin-top: 2.5rem;
+}
+
+.vibeGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.vibeGridRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin-bottom: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.vibeGridItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.vibeTooltip {
+  visibility: hidden;
+  opacity: 0.9;
+  width: max-content;
+  max-width: 320px;
+  background: rgba(255,255,255,0.9);
+  color: #b35d6a;
+  text-align: left;
+  border-radius: 8px;
+  padding: 0.35rem 0.9rem;
+  position: absolute;
+  z-index: 30;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(179,93,106,0.13);
+  font-size: 0.98rem;
+  font-family: 'Georgia', serif;
+  pointer-events: none;
+  transition: opacity 0.18s, visibility 0.18s;
+}
+
+.vibeGridItem:hover .vibeTooltip,
+.vibeGridItem:focus-within .vibeTooltip {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  .vibeGridRow {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  .vibeGridItem, .otherInputWrap {
+    width: 100%;
+  }
+  .prefTitle {
+    margin-bottom: 1.7rem;
+  }
+  .group {
+    margin-bottom: 1.7rem;
+  }
+  .prefOptionsRow {
+    margin-bottom: 1.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .prefFlexContainer {
+    max-width: 1100px;
+    padding: 0 64px 48px 64px;
+  }
+  .prefOptionsRow {
+    flex-direction: row;
+    gap: 6rem;
+    margin-bottom: 2.5rem;
+  }
+  .group {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .prefOptionsRow > .group:nth-child(2) {
+    margin-top: 1.2rem;
+  }
 } 

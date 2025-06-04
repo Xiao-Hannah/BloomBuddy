@@ -15,37 +15,15 @@
 ## Features
 
 ### Core Features
-- Text-first input: describe the recipient, mood, or occasion to generate suggestions.
-- Optional image upload: support for visual inspiration (e.g., outfit, moodboard).
-- Generate 1–3 bouquet options per input, each with a visual and rationale.
-- Lightweight NLP engine to extract tone, keywords, and aesthetic cues from text.
-- Color palette-based generation as a foundation for bouquet design.
-- Mock dataset simulating bouquet options and rules.
-
-### Nice to Have
-- Map-based integration to show local florist availability.
-- Future support for push notifications or pickup alerts.
+- Find bouquet:
+  - Option and text input: describe the recipient, mood, or occasion to generate suggestions.
+  - Generate bouquet options based on keyword matching, each with a visual.
+- Gallery function: view, save and download inspiration
+- Map function: find the florists nearby
 
 ### Out of Scope for MVP
 - Checkout or order placement flow.
-- User profiles, login, or order history features.
-
-
-## Project Timeline
-
-- **Week 1–2**: User research, persona development, low-fidelity wireframes  
-- **Week 3–4**: Frontend scaffolding, text/image input, results UI  
-- **Week 5–6**: Build NLP-based recommendation logic using a mock dataset  
-- **Week 7–8**: Integrate results with UI + florist map display (mock or API)  
-- **Week 9**: User testing, bug fixes, UI polish  
-
-
-## Key Challenges
-
-- Building a meaningful recommendation engine without backend data.
-- Simulating florist availability with realistic but mock data.
-- Creating intuitive, low-friction UI for non-technical users.
-- Defining clear privacy rules for optional image uploads.
+- User profiles, login, or order history features. (Maybe implement user profile/account for view or save history)
 
 
 ## Contact Information
@@ -54,18 +32,41 @@
 **Client:** Hannah Xiao, hx2313@uw.edu <br>
 **Developer:** Laura Tan, xtan0611@uw.edu
 
+---
 
-## Progress
-- Landing page with intro page with bouquet background and site title
-- Scroll down for actual core functions
-- Set up preferences selection page 
-  - options layout
-  - highlighted option
-  - text entry
-  - navigation for results page
-- Results page (placeholder without connection to backend)
+## Using Your Own Google Maps API Key (for Florist Map Feature)
 
-## To view the results
+If you want to use the map feature to find local florists, you need a Google Maps API key with Places API enabled.
+
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project (or select an existing one).
+3. Enable the **Maps JavaScript API** and **Places API** for your project.
+4. Go to **APIs & Services > Credentials** and create an API key.
+5. Restrict your API key to HTTP referrers for security.
+6. In the root of your project, create a file named `.env.local` and add this line:
+
+```
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_api_key_here
+```
+
+7. Save the file. Restart the development server if it was running.
+
+Now, when you visit the "Find Nearest Florist" page, the map will load using your API key.
+
+---
+
+## Dependencies
+
+This project uses:
+- [Next.js](https://nextjs.org/) (v14+)
+- [React](https://react.dev/) (v18+)
+- [@react-google-maps/api](https://github.com/JustFly1984/react-google-maps-api)
+- [Tailwind CSS](https://tailwindcss.com/) (for utility styles)
+
+All dependencies are listed in `package.json` and will be installed with `npm install`.
+
+
+## To view the results locally
 **1. Clone/Pull from the github**
 - git clone https://github.com/url <br>
 - cd your-repo-name
