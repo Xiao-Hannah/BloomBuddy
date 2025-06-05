@@ -122,9 +122,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out --nojekyll --cname https://xiao-hannah.github.io/BloomBuddy/"
+    "deploy": "gh-pages -d out --nojekyll"
   },
   "keywords": [],
   "author": "",
